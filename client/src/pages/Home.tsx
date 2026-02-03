@@ -277,10 +277,11 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 border-t border-white/5 bg-black/20">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-              <Cpu className="w-6 h-6 text-primary" />
-              <span className="text-white">CONEX.TEC</span>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 ">
+            <div className="w-20 h-20 flex items-center gap-2 font-bold text-xl">
+             {/** <Cpu className="w-6 h-6 text-primary"  >*/}
+              <img  src="/logo.png" alt="Conex Tecnologia do Brasil" />
+              <span className="text-white">CONEX TECNOLOGIA</span>
             </div>
             
             <div className="text-muted-foreground text-sm text-center md:text-right">

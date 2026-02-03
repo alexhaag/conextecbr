@@ -34,11 +34,12 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-2xl tracking-tighter cursor-pointer">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/20">
-            <Cpu className="w-6 h-6 text-white" />
+          <div className="w-10 h-10 rounded-xl  flex items-center justify-center">
+          <img src="/logo.png" alt="Conex Tecnologia do Brasil" />
+           {/** <Cpu className="w-6 h-6 text-white" /> */ }
           </div>
           <span className="text-white">
-            CONEX<span className="text-primary">.TEC</span>
+            CONEX<span className="text-green-500"> TECNOLOGIA</span>
           </span>
         </div>
 

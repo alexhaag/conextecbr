@@ -22,38 +22,46 @@ export default function Home() {
   const services = [
     {
       icon: Bot,
-      title: "Automação de Processos",
-      description: "Elimine tarefas repetitivas e permita que sua equipe foque no que realmente importa."
+      title: "Dashboards Automatizados",
+      description: "Relatórios das suas campanhas de tráfego em tempo real, através de um Dashboard completo."
     },
     {
       icon: Calendar,
-      title: "Agendamento Inteligente",
-      description: "Automatize execuções recorrentes e economize tempo operacional valioso."
+      title: "Atendimento Omnichannel",
+      description: "Centralize as mensagens do WhatsApp, Messenger, Instagram, site, Telegram e outros canais em um único lugar, com métricas, estratégias e CRM integrados."
     },
     {
       icon: Database,
-      title: "Gestão de Dados",
-      description: "Centralize, armazene e acesse seus dados com máxima eficiência e segurança."
+      title: "CRM – Gestão de Relacionamento com o Cliente",
+      description: "Aumente a eficiência dos processos, fortaleça a fidelização de clientes e acompanhe o funil e os resultados comerciais."
     },
     {
       icon: LineChart,
-      title: "Análise de Dados",
-      description: "Transforme dados brutos em insights estratégicos para decisões mais assertivas."
+      title: "Agendamento Inteligente",
+      description: "Automatize agendamentos, tarefas e processos com lembretes e execuções programadas."
     },
     {
       icon: Cloud,
-      title: "Soluções em Nuvem",
-      description: "Infraestrutura moderna, escalável e segura preparada para o crescimento."
+      title: "Análise de Dados – Tráfego Pago",
+      description: "Identifique quais campanhas, anúncios e canais geram mais resultados."
     },
     {
       icon: Code2,
-      title: "Desenvolvimento Customizado",
-      description: "Tecnologia feita sob medida para atender especificamente seus objetivos de negócio."
+      title: "Envio de E-mails",
+      description: "Dispare e-mails para múltiplos contatos simultaneamente, com rapidez e controle."
     },
     {
       icon: Activity,
-      title: "Monitoramento Real-time",
-      description: "Acompanhe métricas e performance dos seus sistemas de forma contínua."
+      title: "Base de Conhecimento com IA",
+      description: "Transforme dados de conversas e canais digitais em insights estratégicos para impulsionar o crescimento do seu negócio."
+    },{
+      icon: Activity,
+      title: "Automação e Integração entre Plataformas",
+      description: "Conecte sistemas, aplicativos e dados, eliminando silos e automatizando fluxos de trabalho."
+    },{
+      icon: Activity,
+      title: "Consultoria Estratégica",
+      description: "Analisamos dados, canais e processos para definir estratégias de automação, atendimento e crescimento orientadas a resultados."
     }
   ];
 
@@ -278,9 +286,9 @@ export default function Home() {
       <footer className="py-12 border-t border-white/5 bg-black/20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 ">
-            <div className="w-20 h-20 flex items-center justify-center gap-2 font-bold text-xl">
+            <div className="w-30 h-30 flex items-center justify-center gap-2 font-bold text-xl">
    
-              <img  src="/logo.png" alt="Conex Tecnologia do Brasil" />
+              <img  src="/logo.png" alt="Conex Tecnologia do Brasil" width="60px" height="60px" />
               <span className="text-white">CONEX </span>
               <span className="text-green-500"> TECNOLOGIA</span>
               

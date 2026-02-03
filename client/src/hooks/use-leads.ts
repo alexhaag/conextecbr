@@ -1,35 +1,47 @@
 import { useMutation } from "@tanstack/react-query";
-import { api, type InsertLead } from "@shared/routes"; // Assuming @shared/routes exports InsertLead type helper or similar
-import { insertLeadSchema } from "@shared/schema";
+import { insertLeadSchema } from "@/lib/leadSchema";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
-// Create a type alias if not directly exported from routes, strictly following schema
+// Use the client-side schema
 type LeadInput = z.infer<typeof insertLeadSchema>;
+
+const API_BASE = import.meta.env.VITE_API_URL || "";
 
 export function useCreateLead() {
   const { toast } = useToast();
 
   return useMutation({
     mutationFn: async (data: LeadInput) => {
-      // Validate before sending (optional safety check)
-      const validated = api.leads.create.input.parse(data);
-      
-      const res = await fetch(api.leads.create.path, {
-        method: api.leads.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(validated),
-      });
+      // Validate before sending
+      const validated = insertLeadSchema.parse(data);
 
-      if (!res.ok) {
-        if (res.status === 400) {
-          const error = api.leads.create.responses[400].parse(await res.json());
-          throw new Error(error.message);
+      // If a backend is configured via VITE_API_URL, send there
+      if (API_BASE) {
+        const res = await fetch(`${API_BASE.replace(/\/$/, "")}/api/leads`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(validated),
+        });
+
+        if (!res.ok) {
+          let message = "Failed to submit form. Please try again.";
+          try {
+            const json = await res.json();
+            message = json?.message || message;
+          } catch {}
+          throw new Error(message);
         }
-        throw new Error("Failed to submit form. Please try again.");
+
+        return await res.json();
       }
 
-      return api.leads.create.responses[201].parse(await res.json());
+      // No backend configured: simulate success (frontend-only mode)
+      return {
+        id: Math.floor(Math.random() * 1000000),
+        ...validated,
+        createdAt: new Date().toISOString(),
+      };
     },
     onSuccess: () => {
       toast({
@@ -38,10 +50,10 @@ export function useCreateLead() {
         className: "bg-green-500/10 border-green-500/20 text-green-500",
       });
     },
-    onError: (error) => {
+    onError: (error: any) => {
       toast({
         title: "Erro",
-        description: error.message,
+        description: error?.message || String(error),
         variant: "destructive",
       });
     },

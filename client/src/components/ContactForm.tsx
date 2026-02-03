@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertLeadSchema } from "@shared/schema";
+import { insertLeadSchema } from "@/lib/leadSchema";
 import { z } from "zod";
 import { useCreateLead } from "@/hooks/use-leads";
 import { Button } from "@/components/ui/button";

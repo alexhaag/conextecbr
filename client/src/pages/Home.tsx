@@ -15,17 +15,47 @@ import {
   ArrowRight, 
   CheckCircle2,
   MessageCircle,
-  Cpu
+  Cpu,
+  Edit,
+  AppWindowMacIcon
 } from "lucide-react";
+
 
 export default function Home() {
   const services = [
-    {
-      icon: Bot,
-      title: "Dashboards Automatizados",
-      description: "Relatórios das suas campanhas de tráfego em tempo real, através de um Dashboard completo."
+    
+  {
+      icon: Edit,
+      title: "Site Institucional, Landing Pages e E-commerce",
+      description: "Desenvolvemos sites modernos, responsivos e otimizados para SEO, com foco em conversão e experiência do usuário."
     },
     {
+      icon: AppWindowMacIcon,
+      title: "Aplicativos Mobile (Android e iOS) e Web Apps",
+      description: "Criamos aplicativos nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades personalizadas para o seu negócio."
+    },
+    {
+      icon: Activity,
+      title: "Gestão de Campanhas de Tráfego Pago",
+      description: "Temos um conjunto de soluções que gera mais clientes, mais faturamento e mais resultados. Trackeamento, análise de dados e relatórios completos para identificar quais campanhas, anúncios e canais geram mais resultados."
+    },
+  {
+      icon: Cpu,
+      title: "Automação",
+      description: "Integre qualquer sistema, aplicativos e dados, eliminando silos e automatizando fluxos de trabalho. Conecte CRMs, Google Calendar,ERPs, plataformas de e-commerce, ferramentas de marketing e muito mais para criar processos eficientes e personalizados."
+    },
+    {
+      icon: Bot,
+      title: "I.A. – Inteligência Artificial para Negócios",
+      description: "Tenha sua própria Base de Conhecimento e transforme dados de conversas e canais digitais em insights estratégicos para impulsionar o crescimento do seu negócio. Tenha sua Base de Conhecimento, MCPs, chatbots, assistentes virtuais e automações inteligentes para atendimento, vendas, marketing e processos internos."
+    }
+
+  ];
+
+  /*
+    ,
+
+    { 
       icon: Calendar,
       title: "Atendimento Omnichannel",
       description: "Centralize as mensagens do WhatsApp, Messenger, Instagram, site, Telegram e outros canais em um único lugar, com métricas, estratégias e CRM integrados."
@@ -56,14 +86,11 @@ export default function Home() {
       description: "Transforme dados de conversas e canais digitais em insights estratégicos para impulsionar o crescimento do seu negócio."
     },{
       icon: Activity,
-      title: "Automação e Integração entre Plataformas",
-      description: "Conecte sistemas, aplicativos e dados, eliminando silos e automatizando fluxos de trabalho."
-    },{
-      icon: Activity,
       title: "Consultoria Estratégica",
       description: "Analisamos dados, canais e processos para definir estratégias de automação, atendimento e crescimento orientadas a resultados."
+      
     }
-  ];
+  */
 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
@@ -94,8 +121,14 @@ export default function Home() {
               <span className="text-gradient">Pensam, Conectam</span> <br />
               e Executam.
             </h1>
+
+             <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
+              Tenha e acompanhe sua Gestão de Tráfego em tempo real com Dashboards ( painéis de controle ).
+              
+            </p>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
+            
               Automatize suas rotinas com soluções criadas especialmente para o seu negócio. Aumente a eficiência e reduza custos hoje mesmo.
             </p>
 
@@ -194,7 +227,7 @@ export default function Home() {
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-5xl font-bold mb-8">
-                Por que escolher a <span className="text-primary">Conex.Tec</span>?
+                Por que escolher a <span className="text-primary">Conex Tecnologia</span>?
               </h2>
               
               <div className="space-y-6">

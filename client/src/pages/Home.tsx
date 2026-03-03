@@ -6,93 +6,50 @@ import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 import { 
   Bot, 
-  Calendar, 
-  Database, 
-  LineChart, 
-  Cloud, 
-  Code2, 
+  MessageSquare, 
+  Workflow, 
+  Brain, 
+  TrendingUp, 
   Activity, 
   ArrowRight, 
   CheckCircle2,
   MessageCircle,
-  Cpu,
-  Edit,
-  AppWindowMacIcon
 } from "lucide-react";
 
 
 
 export default function Home() {
-  const services = [
     
+  const services = [
   {
-      icon: Edit,
-      title: "Site Institucional, Landing Pages e E-commerce",
-      description: "Desenvolvemos sites modernos, responsivos e otimizados para SEO, com foco em conversão e experiência do usuário."
-    },
-    {
-      icon: AppWindowMacIcon,
-      title: "Aplicativos Mobile (Android e iOS) e Web Apps",
-      description: "Criamos aplicativos nativos e híbridos para Android e iOS, com design intuitivo e funcionalidades personalizadas para o seu negócio."
-    },
-    {
-      icon: Activity,
-      title: "Gestão de Campanhas de Tráfego Pago",
-      description: "Temos um conjunto de soluções que gera mais clientes, mais faturamento e mais resultados. Trackeamento, análise de dados e relatórios completos para identificar quais campanhas, anúncios e canais geram mais resultados."
-    },
+    icon: MessageSquare,
+    title: "Atendimento Omnichannel Estruturado",
+    description: "Centralizamos todos os seus canais de atendimento em um único sistema inteligente. Organize WhatsApp, redes sociais, site e outros canais com distribuição automática de conversas, histórico completo de clientes e controle de tempo de resposta para não perder oportunidades."
+  },
   {
-      icon: Cpu,
-      title: "Automação",
-      description: "Integre qualquer sistema, aplicativos e dados, eliminando silos e automatizando fluxos de trabalho. Conecte CRMs, Google Calendar,ERPs, plataformas de e-commerce, ferramentas de marketing e muito mais para criar processos eficientes e personalizados."
-    },
-    {
-      icon: Bot,
-      title: "I.A. – Inteligência Artificial para Negócios",
-      description: "Tenha sua própria Base de Conhecimento e transforme dados de conversas e canais digitais em insights estratégicos para impulsionar o crescimento do seu negócio. Tenha sua Base de Conhecimento, MCPs, chatbots, assistentes virtuais e automações inteligentes para atendimento, vendas, marketing e processos internos."
-    }
+    icon: Workflow,
+    title: "Automação de Processos Comerciais",
+    description: "Automatizamos tarefas repetitivas e integramos seus sistemas para eliminar falhas e retrabalho. Conecte atendimento, CRM, agenda, marketing e financeiro criando fluxos inteligentes que aumentam produtividade e organização."
+  },
+  {
+    icon: Bot,
+    title: "Agentes Inteligentes para Atendimento e Vendas",
+    description: "Implementamos agentes inteligentes treinados com a base de conhecimento da sua empresa para responder dúvidas, qualificar clientes, direcionar atendimentos e apoiar o time comercial, reduzindo tempo de resposta e aumentando conversão."
+  },
+  {
+    icon: Brain,
+    title: "Inteligência Artificial Aplicada ao Negócio",
+    description: "Transforme conversas e dados do atendimento em insights estratégicos. Utilizamos inteligência artificial para analisar padrões, identificar oportunidades de melhoria e apoiar decisões comerciais com base em dados reais."
+  },
+  {
+    icon: TrendingUp,
+    title: "Estrutura para Escalar com Tráfego Pago",
+    description: "Depois de organizar atendimento e processos, criamos a base ideal para investir em marketing com segurança. Mais controle, mais aproveitamento de leads e crescimento sustentável sem desperdício."
+  }
+];
 
-  ];
 
-  /*
-    ,
-
-    { 
-      icon: Calendar,
-      title: "Atendimento Omnichannel",
-      description: "Centralize as mensagens do WhatsApp, Messenger, Instagram, site, Telegram e outros canais em um único lugar, com métricas, estratégias e CRM integrados."
-    },
-    {
-      icon: Database,
-      title: "CRM – Gestão de Relacionamento com o Cliente",
-      description: "Aumente a eficiência dos processos, fortaleça a fidelização de clientes e acompanhe o funil e os resultados comerciais."
-    },
-    {
-      icon: LineChart,
-      title: "Agendamento Inteligente",
-      description: "Automatize agendamentos, tarefas e processos com lembretes e execuções programadas."
-    },
-    {
-      icon: Cloud,
-      title: "Análise de Dados – Tráfego Pago",
-      description: "Identifique quais campanhas, anúncios e canais geram mais resultados."
-    },
-    {
-      icon: Code2,
-      title: "Envio de E-mails",
-      description: "Dispare e-mails para múltiplos contatos simultaneamente, com rapidez e controle."
-    },
-    {
-      icon: Activity,
-      title: "Base de Conhecimento com IA",
-      description: "Transforme dados de conversas e canais digitais em insights estratégicos para impulsionar o crescimento do seu negócio."
-    },{
-      icon: Activity,
-      title: "Consultoria Estratégica",
-      description: "Analisamos dados, canais e processos para definir estratégias de automação, atendimento e crescimento orientadas a resultados."
-      
-    }
-  */
-
+ 
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
@@ -124,13 +81,18 @@ export default function Home() {
             </h1>
 
              <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
-              Tenha e acompanhe sua Gestão de Tráfego em tempo real com Dashboards ( painéis de controle ).
+              Atendimento inteligente com agentes que trabalham por você.
+
+Estruture sua operação com agentes automatizados, organize seus canais e transforme cada lead em oportunidade real.
+Depois disso, escalar com tráfego pago deixa de ser risco e vira estratégia.
+
+
               
             </p>
             
             <p className="text-xl text-muted-foreground mb-8 max-w-lg leading-relaxed">
             
-              Automatize suas rotinas com soluções criadas especialmente para o seu negócio. Aumente a eficiência e reduza custos hoje mesmo.
+              Organize. Automatize. Escale.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

@@ -266,8 +266,9 @@ Depois disso, escalar com tráfego pago deixa de ser risco e vira estratégia.
                     <p>Rua Juvêncio Soares, 1592</p>
                     <p>Telefone/Whatsapp: (51) 9999-87592</p>
                     <p>Email: contato@conex.tec.br</p>
-                    <p>Cachoeira do Sul - RS, 96.501-516</p>
-                    <p><img src="brasil-32x32.png" width={32} /></p>
+                    <p>Cachoeira do Sul - RS</p>
+                    <p>CEP: 96.501-516</p>
+                    <p><img src="brasil-32x32.png" width={32} height={32} /></p>
                   </div>
                 </div>
               </div>

@@ -264,6 +264,8 @@ Depois disso, escalar com tráfego pago deixa de ser risco e vira estratégia.
                     <p><strong>CONEX TECNOLOGIA</strong></p>
                     <p>CNPJ: 15.176.703/0001-42</p>
                     <p>Rua Juvêncio Soares, 1592</p>
+                    <p>Telefone/Whatsapp: (51) 9999-87592</p>
+                    <p>Email: contato@conex.tec.br</p>
                     <p>Cachoeira do Sul - RS, 96.501-516</p>
                   </div>
                 </div>
